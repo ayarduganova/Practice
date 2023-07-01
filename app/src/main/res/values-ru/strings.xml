@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Практика</string>
+    <string name="click_me">Нажми на меня</string>
+    <string name="Сalculate_calories">Рассчитать калории</string>
+    <string name="calories_per_day">калорий в день</string>
+    <string name="Data_entered_incorrectly">Данные введены неверно</string>
+    <string name="Name">Имя</string>
+    <string name="Height">Рост</string>
+    <string name="Weight">Вес</string>
+    <string name="Age">Возраст</string>
+</resources>
