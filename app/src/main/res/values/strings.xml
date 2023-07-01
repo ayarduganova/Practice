@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Summer_Practice</string>
+    <string name="app_name">Practice</string>
+    <string name="click_me">Click me</string>
+    <string name="Сalculate_calories">calculate calories</string>
+    <string name="calories_per_day">calories per day</string>
+    <string name="Data_entered_incorrectly">Data entered incorrectly</string>
+    <string name="Name">Name</string>
+    <string name="Height">Height</string>
+    <string name="Weight">Weight</string>
+    <string name="Age">Age</string>
 </resources>
