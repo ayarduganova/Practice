@@ -18,7 +18,7 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bnv_main"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:labelVisibilityMode="selected"
+
         android:layout_width="match_parent"
         app:menu="@menu/menu_bottom"
         android:layout_height="wrap_content"/>

@@ -21,16 +21,7 @@ class InformationFragment : Fragment(R.layout.fragment_city) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = FragmentCityBinding.bind(view)
-
-        val name = arguments?.getString(ARG_NAME)
-        Log.e("ProfileFragment", name.orEmpty())
-
-        val pref: SharedPreferences = requireContext().getSharedPreferences("Default", MODE_PRIVATE)
-
-        requireContext().getColor(R.color.accent)
-
         initAdapter()
-
     }
 
     override fun onDestroyView() {
@@ -43,22 +34,12 @@ class InformationFragment : Fragment(R.layout.fragment_city) {
             list = CityRepository.list,
             glide = Glide.with(this),
             onItemClick = { city ->
-                findNavController().navigate(R.id.action_informationFragment_to_informationAboutCityFragment)
+                findNavController().navigate(R.id.action_informationFragment_to_informationAboutCityFragment,
+                InformationAboutCityFragment.createBundle(city.id))
             }
         )
         binding?.rvCity?.adapter = adapter
         binding?.rvCity?.layoutManager = GridLayoutManager(requireContext(), 2)
     }
 
-    companion object {
-
-        private const val ARG_NAME = "ARG_NAME"
-        private const val ARG_AGE = "ARG_AGE"
-        fun createBundle(name: String, age: Int): Bundle {
-            val bundle = Bundle()
-            bundle.putString(ARG_NAME, name)
-            bundle.putInt(ARG_AGE, age)
-            return bundle
-        }
-    }
 }

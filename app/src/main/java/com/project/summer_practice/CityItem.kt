@@ -23,8 +23,8 @@ class CityItem(
 
     fun onBind(city: City) {
         binding.run {
-            tvDesc.text = city.country
             tvTitle.text = city.name
+            tvDesc.text = city.country
                 glide
                 .load(city.url)
                 //.placeholder(R.drawable.gato_1)
