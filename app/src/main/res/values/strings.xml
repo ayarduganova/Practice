@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Summer_Practice</string>
+    <string name="hello_blank_fragment">Profile Screen</string>
 </resources>
